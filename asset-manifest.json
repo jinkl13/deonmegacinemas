@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/deonmegacinemas/static/css/main.2531ef95.css",
-    "main.js": "/deonmegacinemas/static/js/main.cd98bd1d.js",
+    "main.js": "/deonmegacinemas/static/js/main.841ca84d.js",
     "static/js/453.9d585e61.chunk.js": "/deonmegacinemas/static/js/453.9d585e61.chunk.js",
     "static/media/zh1-rev-car-new.png": "/deonmegacinemas/static/media/zh1-rev-car-new.5639716452aadb4dd7fc.png",
     "static/media/h1-bg-img2.jpg": "/deonmegacinemas/static/media/h1-bg-img2.310d2f79f5348ee59704.jpg",
@@ -21,11 +21,11 @@
     "static/media/hover-team-image.png": "/deonmegacinemas/static/media/hover-team-image.ce5086fa4b002c86be44.png",
     "index.html": "/deonmegacinemas/index.html",
     "main.2531ef95.css.map": "/deonmegacinemas/static/css/main.2531ef95.css.map",
-    "main.cd98bd1d.js.map": "/deonmegacinemas/static/js/main.cd98bd1d.js.map",
+    "main.841ca84d.js.map": "/deonmegacinemas/static/js/main.841ca84d.js.map",
     "453.9d585e61.chunk.js.map": "/deonmegacinemas/static/js/453.9d585e61.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2531ef95.css",
-    "static/js/main.cd98bd1d.js"
+    "static/js/main.841ca84d.js"
   ]
 }
