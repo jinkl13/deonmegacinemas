@@ -30,7 +30,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router  basename="/deonmegacinemas">
       <div className="App">
         <Navbar />
         
