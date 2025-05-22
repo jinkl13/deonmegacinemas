@@ -1,0 +1,137 @@
+.navbar-header {
+  display:flex;
+  flex-direction: row;
+  background-color: transparent;
+  position: fixed; 
+  padding: 10px;
+  width:100vw;
+  justify-content: center;
+  z-index:11;
+  transition: all 0.5s ease;
+}
+
+.navbar-header:hover {
+  background-color: var(--color-black);
+  transition: 0.5s;
+}
+
+.navbar-header.scrolled {
+    background-color: var(--color-black);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+.navbar-container {
+    display: inherit;
+    width:90%;
+    justify-content: space-between;
+} 
+
+.navbar-logo{
+    height: 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row  ;
+    list-style: none;
+    gap:24px;
+    justify-content: center;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+nav ul li a{
+    position: relative;
+ color: var(--color-white);
+    text-decoration: none;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    top:20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 52" preserveAspectRatio="none"><path d="M6.697,10.2755,386.9679.453C356.6,8.9365,325.1665,13.1211,293.7054,15.216c-27.8931,1.8573-55.8658,2.09-83.82,2.3228L.0037,19.2839,329.2261,22.55C253.3036,42.1961,173.6777,40.6567,95.9721,51.2409" fill="none" stroke="%23D2B48C" stroke-width="3"/></svg>') no-repeat center;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+
+  
+nav ul li a:hover::after {
+    opacity: 1;
+  }
+
+  .navbar-actions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+  .get-tickets {
+    background: transparent;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .get-tickets:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  .divider {
+    height: 30px;
+    width: 1px;
+    background-color: var(--color-white);
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+    cursor: pointer;
+  }
+  
+  .hamburger .ham1{
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-white);
+  }
+
+  .hamburger .ham1{
+    width: 28px;
+  }
+  
+  .hamburger .ham2{
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-white);
+  }
+  .hamburger .ham2:hover {
+    width: 24px;
+  }
+  
+  .get-tickets :hover{
+    
+    color: var(--color-black);
+  }
