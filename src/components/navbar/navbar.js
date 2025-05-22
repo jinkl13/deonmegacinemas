@@ -29,10 +29,10 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
           <ul>
-            <li><a href="/" onClick={() => setIsMenuOpen(false)}>Home</a></li>
-            <li><a href="/about" onClick={() => setIsMenuOpen(false)}>About</a></li>
-            <li><a href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</a></li>
-            <li><a href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
+             <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+            <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
+            <li><Link to="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</Link></li>
+            <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
           </ul>
         </nav>
 
