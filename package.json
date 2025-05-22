@@ -1,0 +1,22 @@
+{
+  "name": "deonmegacinemas",
+  "version": "1.0.0",
+  "description": "<BR>\r A web portfolio for film makers",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinkl13/deonmegacinemas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jinkl13/deonmegacinemas/issues"
+  },
+  "homepage": "https://github.com/jinkl13/deonmegacinemas#readme"
+}
