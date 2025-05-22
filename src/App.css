@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+:root {
+  --color-primary:#f0a519;
+  --color-white2:#3f3f3f;
+  --color-grey:#797979;
+  --color-white:#fff;
+  --color-black:#000;
+  --color-atag-hover:#eaa57f;
+  --color-gold:#946d26;
+  --color-gold2: #c1ab65;
+}
+
+/* Apply to all text elements */
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+
+
+/* Ensure all specific elements inherit it */
+.App-header,
+.landing-hero,
+.landing-content,
+.nav-list,
+.get-tickets,
+h1, h2, h3, h4, h5, h6,
+p, a, li, button {
+  font-family: inherit;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap:0;
+  text-align: center;
+}
+
+
+
+/*landing section*/
+.landing-hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  background: url('assets/landing/landing-bg.jpg');
+}
+.landing-hero :hover{
+  background: none;
+}
+.landing-content{
+  gap:24px;
+  background: none;
+  text-transform: uppercase;
+}
+
+.landing-content h1{
+  margin:0;
+  font-size: 80px;
+  font-weight: 900;
+  color: var(--color-primary);
+  text-shadow: 
+  1px 1px 0 var(--color-primary), 
+  -1px -1px 0 var(--color-primary),
+  1px -1px 0 var(--color-primary),
+  -1px 1px 0 var(--color-primary);
+}
+
+.landing-content h4{
+  margin:0;
+  color:var(--color-white);
+ font-weight:500;
+}
+
+/* Animation for the text */
+.landing-content h4 {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.landing-content h1 {
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.corner-image {
+  height:50%;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width:50%;
+  padding: 20px;
+  justify-content: end;
+  gap:24px;
+}
+.corner-image-support-image{
+  display:flex;
+  flex-direction: row;
+  gap:12px;
+}
+.corner-image-main-image {
+  position:absolute ;
+  width: 120% !important; /* Force width */
+  height: auto;
+  right:0;
+  margin-bottom: 15px;
+  align-self: flex-end; /* Align specifically to the right */
+  animation: float 3s ease-in-out infinite;
+  bottom:22px;
+}
+
+.corner-image h3 {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  text-align: left;
+  margin: 5px 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  max-width: 60%; /* Match image width */
+  width:60%;
+}
+
+.corner-image p {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  text-align: left;
+  margin-bottom: 10px;
+  max-width: 40%; /* Match image width */
+  font-style: italic;
+}
+
+.corner-image h3, p, .corner-image-support-image {
+  z-index:1;
+}
+
+.corner-image-support-icons {
+  width: 7% !important; /* Force width */
+  height: auto;
+  margin-left: 10px; /* Space between icons */
+  display: inline-block; /* Keep icons in a row */
+}
+
+/* Optional hover effects */
+.corner-image-support-icons:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+
+/* Optional floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+
+/*SECTION 2*/
+.ls2{
+  display: inherit;
+  justify-content: center;
+  color:var(--color-white);
+  background-color:var(--color-black);
+  text-align: justify;
+  flex-direction: row;
+}
+
+.ls2-container{
+  display: inherit;
+  flex-direction: row;
+  width:70%;
+}
+
+.ls2-part-one{
+  text-transform: uppercase;
+  flex:1;
+}
+
+
+.ls2 h4 {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.ls2 h3{
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.ls2-part-one-special {
+  position: relative;
+  display: inline-block;
+}
+/* SVG underline effect */
+.ls2-part-one-special::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position underline below text */
+  left: 0;
+  width: 100%;
+  height: 100%; /* Underline thickness */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 52" preserveAspectRatio="none"><path d="M6.697,10.2755,386.9679.453C356.6,8.9365,325.1665,13.1211,293.7054,15.216c-27.8931,1.8573-55.8658,2.09-83.82,2.3228L.0037,19.2839,329.2261,22.55C253.3036,42.1961,173.6777,40.6567,95.9721,51.2409" fill="none" stroke="white" stroke-width="1.5"/></svg>') no-repeat center;
+  background-size: 100% 100%; /* Full width underline */
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.ls2-part-two {
+  line-height: 3ch;
+  align-items: end;
+  display: inherit;
+  flex:1;
+}
+
+
+/*section 4*/
+/* Add to your CSS file */
+.ls3 {
+  padding: 60px 0;
+  background: #000;
+  color: white;
+}
+
+.ls3-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+
+
+.ls3 h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.ls3-image-div{
+  background-image: url('assets/landing/week1.jpg');
+  height: 500px;
+  width: 100%;
+  background-size: cover; /* Ensures image covers the div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  margin-top: 20px;
+}
+
+/*section 5*/
+.ls4 {
+  padding: 60px 0;
+  background: #000;
+  color: white;
+  text-transform: uppercase;
+  background-image: url('assets/landing/h1-bg-img2.jpg');
+}
+.ls4-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.ls4-subsection-image {
+  width:300px;
+  height:auto;
+} 
+
+.ls4-subsection-image-div{
+  text-align: left;
+  gap: 10px;
+} 
+
+.ls4-subsection{
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.ls4 p{
+  text-align: left;
+  padding: 0;
+}
+
+.ls4 h3{
+  font-size: 2rem;
+  font-weight: 100;
+  margin:0;
+}
+
+.ls4 h4{
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  margin: 0;
+}
+
+.ls4 h5{
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/*section 5 image hover*/
+/* Image hover effect */
+.image-hover-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ls4-subsection-image {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/landing/hover-team-image.png'); /* Your hover image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  
+  transition: opacity 0.3s ease;
+}
+
+.image-hover-container:hover .image-hover-overlay {
+  opacity: 1;
+  
+}
+
+
+
+
+/* Ticker Styles */
+/* TICKER STYLES */
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem 0;
+ 
+}
+
+/* Gradient fade edges */
+.ticker-container::before,
+.ticker-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  max-width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+
+/* Ticker track (flex for better control) */
+.ticker-track {
+  display: inline-flex;
+  animation: ticker-scroll 20s linear infinite;
+  will-change: transform; /* Optimizes performance */
+}
+
+/* Ticker items */
+.ticker-item {
+  white-space: nowrap;
+  padding: 0 4rem;
+  font-size: 16rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 700;
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+/* Smooth infinite scroll */
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Moves half the width */
+}
+
+/* Pause on hover */
+.ticker-container:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ticker-item {
+    font-size: 3rem;
+    padding: 0 2rem;
+  }
+}
+
+/* Add these styles to your CSS */
