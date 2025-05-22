@@ -1,0 +1,234 @@
+.container {
+  padding: 80px 500px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselTrack {
+  display: flex;
+  width: 100%;
+  height: 550px;
+}
+
+.item {
+  flex: 0 0 100%;
+  height: 500px;
+  min-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  background-size: cover;
+  background-position: center;
+  margin: 0 15px;
+  transition: transform 0.5s ease;
+}
+
+.center {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  color: white;
+  text-align: left;
+}
+
+.content h3 {
+  margin-top: 2px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.content h6 {
+  margin:0px;
+  line-height: 2ch;
+  font-size: 0.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 80%;
+}
+
+/* Pause on hover */
+.container:hover .item {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .item {
+    height: 400px;
+  }
+  
+  .content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* Play Button Container */
+.playButtonContainer {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: transform;
+}
+
+/* Play Button Elements */
+.playButton {
+  filter: drop-shadow(0 0 12px rgba(0,0,0,0.7));
+  transition: transform 0.3s ease;
+}
+
+.buttonBackground {
+  transition: fill 0.3s ease;
+}
+
+.progressRing {
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+.playIcon {
+  fill: white;
+  transition: all 0.2s ease;
+}
+
+/* Hover States */
+.playButtonContainer:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.playButtonContainer:hover .buttonBackground {
+  fill: rgba(0,0,0,0.7);
+}
+
+.playButtonContainer:hover .playIcon {
+  fill: var(--color-white);
+}
+
+/* Active/Pressed State */
+.playButtonContainer:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+/* Animation Keyframes */
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.1); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+/* Add this if you want a subtle pulse effect */
+.playButtonContainer.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .playButton {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+
+
+/*videopopup*/
+/* Video Popup Styles */
+.videoPopupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoPopupContainer {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: rotate(90deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .videoPopupContainer {
+    width: 95%;
+  }
+  
+  .closeButton {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
