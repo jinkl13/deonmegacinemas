@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/deonmegacinemas/static/css/main.2531ef95.css",
-    "main.js": "/deonmegacinemas/static/js/main.dd1381da.js",
+    "main.css": "/deonmegacinemas/static/css/main.25fa227d.css",
+    "main.js": "/deonmegacinemas/static/js/main.d1b35f2b.js",
     "static/js/453.9d585e61.chunk.js": "/deonmegacinemas/static/js/453.9d585e61.chunk.js",
     "static/media/zh1-rev-car-new.png": "/deonmegacinemas/static/media/zh1-rev-car-new.5639716452aadb4dd7fc.png",
     "static/media/h1-bg-img2.jpg": "/deonmegacinemas/static/media/h1-bg-img2.310d2f79f5348ee59704.jpg",
@@ -10,22 +10,29 @@
     "static/media/product2.jpg": "/deonmegacinemas/static/media/product2.d5d3efbe82bd8e9e89c9.jpg",
     "static/media/work4.jpg": "/deonmegacinemas/static/media/work4.ceb8a3c212c89ee37540.jpg",
     "static/media/product1.jpg": "/deonmegacinemas/static/media/product1.51228ff0d6e0e2a37769.jpg",
+    "static/media/gallery6.jpg": "/deonmegacinemas/static/media/gallery6.2f9bb62eda8c4ea5ab61.jpg",
     "static/media/product3.jpg": "/deonmegacinemas/static/media/product3.e102785c099596fc53bb.jpg",
     "static/media/title-img-1.jpg": "/deonmegacinemas/static/media/title-img-1.9e0e3e087271467237e0.jpg",
+    "static/media/gallery5.jpg": "/deonmegacinemas/static/media/gallery5.a49fe6fd141900dc1c5f.jpg",
     "static/media/h1-team2.jpg": "/deonmegacinemas/static/media/h1-team2.7ddd5ebef1caa1964c3c.jpg",
     "static/media/h1-team4.jpg": "/deonmegacinemas/static/media/h1-team4.27ddb72dd72e1bfb7577.jpg",
+    "static/media/h4-bg-img1.jpg": "/deonmegacinemas/static/media/h4-bg-img1.ce8f945b720279a0b9ce.jpg",
     "static/media/h1-team3.jpg": "/deonmegacinemas/static/media/h1-team3.2f6c7c4e914b0a0c6d10.jpg",
     "static/media/h1-team1.jpg": "/deonmegacinemas/static/media/h1-team1.13a4af254e3853efe9f6.jpg",
     "static/media/landing-bg.jpg": "/deonmegacinemas/static/media/landing-bg.f1ee248bf21f0f29a6c7.jpg",
+    "static/media/gallery1.jpg": "/deonmegacinemas/static/media/gallery1.98a675fc6a83f893f58e.jpg",
+    "static/media/gallery4.jpg": "/deonmegacinemas/static/media/gallery4.a33434554da28f21d0f0.jpg",
+    "static/media/gallery3.jpg": "/deonmegacinemas/static/media/gallery3.65f977f6a6d0d0d8fe52.jpg",
+    "static/media/gallery2.jpg": "/deonmegacinemas/static/media/gallery2.1dab695b8b9300300780.jpg",
     "static/media/deon-logo-1.png": "/deonmegacinemas/static/media/deon-logo-1.60f154bc163ac88a54bb.png",
     "static/media/hover-team-image.png": "/deonmegacinemas/static/media/hover-team-image.ce5086fa4b002c86be44.png",
     "index.html": "/deonmegacinemas/index.html",
-    "main.2531ef95.css.map": "/deonmegacinemas/static/css/main.2531ef95.css.map",
-    "main.dd1381da.js.map": "/deonmegacinemas/static/js/main.dd1381da.js.map",
+    "main.25fa227d.css.map": "/deonmegacinemas/static/css/main.25fa227d.css.map",
+    "main.d1b35f2b.js.map": "/deonmegacinemas/static/js/main.d1b35f2b.js.map",
     "453.9d585e61.chunk.js.map": "/deonmegacinemas/static/js/453.9d585e61.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2531ef95.css",
-    "static/js/main.dd1381da.js"
+    "static/css/main.25fa227d.css",
+    "static/js/main.d1b35f2b.js"
   ]
 }
