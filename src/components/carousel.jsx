@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './Carousel.module.css';
 import PlayButton from './playbutton'; // Import the PlayButton component
@@ -93,5 +94,6 @@ const Carousel = () => {
     </section>
   );
 };
+
 
 export default Carousel;

@@ -1,0 +1,133 @@
+.gallery-page {
+    ALIGN-ITEMS: center;
+    DISPLAY: flex;
+    HEIGHT: 300PX;
+    JUSTIFY-CONTENT: center;
+}
+
+.gallery-page h3{
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.gallery-page ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap:20px
+}
+
+.gp-list{
+    display: inline-block;
+    transform: rotate(-45deg);
+    width:5px;
+    height: 5px;
+    background-color: var(--color-gold2);
+}
+
+.gallery-page a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*section 2- gallery content*/
+.gallery-content{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    margin: 100px 0;
+
+}
+
+.gallery-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width:80%;
+}
+
+.gc-img{
+    height:250px;
+    width: auto;
+    transition: scale 0.3s ease;
+}
+
+.gallery-item {
+  flex: 0 1 calc(33.33% - 24px); /* 3 columns, minus gap */
+  box-sizing: border-box;
+  height: 250px; /* example height */
+  color: transparent;
+  position: relative; /* Needed for absolute positioning inside */
+  overflow: hidden;
+  transition: border-radius 0.5s ease;
+}
+.gallery-item:hover{
+    border-radius:70px;
+}
+.gallery-item p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  width: 80%;
+  text-align: justify;
+  position: absolute; /* Use absolute for easier control */
+  bottom: 20px;
+  left: 10%;
+  color: white; /* Actual text color */
+  opacity: 0; /* Hide initially */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Optional: prevent accidental hover on p */
+}
+
+.gallery-item:hover p {
+  opacity: 1; /* Show on hover */
+}
+
+.gallery-item:hover .gc-img {
+  filter: brightness(0.7);
+  scale:0.95;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:30px;
+    height: 30px;
+    border-radius: 50px;
+    border:grey 2px;
+    background: radial-gradient(transparent, grey);
+}
+
+.traingle {
+    transform: rotate(-45deg);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(135deg, transparent, white);
+}
+
+.gallery-playbutton {
+    z-index: 2;
+    top: 25px;
+    right: 50px;
+    position: absolute;
+    opacity:0;
+    scale:1;
+    transition:opacity 0.4s ease;
+    transition:scale 0.3s ease;
+}
+
+.gallery-playbutton:hover {
+    scale:1.2;
+}
+
+.gallery-item:hover .gallery-playbutton{
+    opacity:1;
+}

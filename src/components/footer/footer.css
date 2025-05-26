@@ -1,3 +1,4 @@
+
 /* Section 5 Styles */
 .ls5 {
     display: flex;
@@ -193,4 +194,5 @@
     .ls5-logo {
       max-width: 150px;
     }
+
   }
