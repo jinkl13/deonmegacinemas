@@ -1,7 +1,7 @@
 {
   "name": "deon-cinema",
   "version": "0.1.0",
-  "homepage": "https://jinkl13.github.io/deonmegacinemas/",
+  "homepage": "https://deonmegacinemas.vercel.app/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
