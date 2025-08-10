@@ -136,3 +136,38 @@ nav ul li a:hover::after {
     
     color: var(--color-black);
   }
+
+@media (min-width: 1728px) {
+    .navbar-container{
+      font-size: 20px;
+    }
+    .divider {
+      display: none;
+    }
+  }
+  @media (max-width: 1728px) and (min-width: 1024px) {
+    .navbar-container{
+      font-size: 18px;
+    }
+    
+  }
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .navbar-container{
+      font-size: 17px;
+    }
+  }
+  @media (max-width: 768px) and (min-width: 600px) {
+    .navbar-container{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 599px) and (min-width: 390px) {
+    .navbar-container{
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 389px){
+    .navbar-container{
+      font-size: 14px;
+    }
+  }
