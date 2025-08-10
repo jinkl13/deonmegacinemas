@@ -102,6 +102,7 @@ nav ul li a:hover::after {
     height: 30px;
     width: 1px;
     background-color: var(--color-white);
+    display:none;
   }
   
   .hamburger {
