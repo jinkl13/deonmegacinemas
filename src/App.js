@@ -8,6 +8,8 @@ import Gallery from './pages/gallery.js';
 import Contact from './pages/contact.js';
 
 
+
+
 import './App.css';
 
 function App() {

@@ -1,6 +1,10 @@
 import React from 'react';
 import './about.css'; // Assuming you have a CSS file for styling
+import { usePageMeta } from '../hooks/usePageMeta';
+
 const About = () => {
+  usePageMeta("About | Deon Mega Cinemas");
+
   return (
     <>
       <section className="about-page bg-black">

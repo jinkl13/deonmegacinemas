@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Set document title
+document.title = "Deon Mega Cinemas";
+
+// Set favicon
+const favicon = document.createElement('link');
+favicon.rel = 'icon';
+favicon.href = '../public/deon-logo-1.png'; // Adjust path as necessary
+document.head.appendChild(favicon);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -11,7 +20,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

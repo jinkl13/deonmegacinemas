@@ -1,8 +1,10 @@
-
 import React from 'react';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 import './gallery.css';
 const Gallery = () => {
+  usePageMeta("Gallery | Deon Mega Cinemas");
+
   return (
     <>
     <section className="gallery-page bg-black">

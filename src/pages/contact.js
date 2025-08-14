@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -11,6 +10,7 @@ import './contact.css';
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from 'leaflet';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
@@ -25,6 +25,7 @@ L.Icon.Default.mergeOptions({
 });
 
 const Contact = () => {
+  usePageMeta("Contact | Deon Mega Cinemas");
   return (
     <>
     <section className="contact-breadcrumb">

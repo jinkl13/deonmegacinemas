@@ -1,4 +1,5 @@
 import Navbar from '../components/navbar/navbar.js';
+import { usePageMeta } from '../hooks/usePageMeta';
 
 import '../App.css';
 
@@ -25,6 +26,8 @@ const Ticker = ({ items = [] }) => {
 };
 
 function App() {
+  usePageMeta("Home | Deon Mega Cinemas");
+  
   const tickerItems = [
     "drama",
     "•",

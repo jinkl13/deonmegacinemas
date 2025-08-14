@@ -137,20 +137,12 @@ nav ul li a:hover::after {
     color: var(--color-black);
   }
 
-<<<<<<< HEAD
 
   @media (min-width: 1728px) {
     .navbar-container{
       font-size: 20px;
     }
     .divider, .hamburger {
-=======
-@media (min-width: 1728px) {
-    .navbar-container{
-      font-size: 20px;
-    }
-    .divider {
->>>>>>> 77019ddc67adaaecc5920599f95580fa8832f761
       display: none;
     }
   }
@@ -158,20 +150,16 @@ nav ul li a:hover::after {
     .navbar-container{
       font-size: 18px;
     }
-<<<<<<< HEAD
 
     .divider, .hamburger {
       display: none;
     }
-=======
->>>>>>> 77019ddc67adaaecc5920599f95580fa8832f761
     
   }
   @media (max-width: 1023px) and (min-width: 768px) {
     .navbar-container{
       font-size: 17px;
     }
-<<<<<<< HEAD
     .divider, .hamburger {
       display: none;
     }
@@ -183,30 +171,19 @@ nav ul li a:hover::after {
     .get-tickets, nav {
       display: none;
     }
-=======
-  }
-  @media (max-width: 768px) and (min-width: 600px) {
-    .navbar-container{
-      font-size: 16px;
-    }
->>>>>>> 77019ddc67adaaecc5920599f95580fa8832f761
   }
   @media (max-width: 599px) and (min-width: 390px) {
     .navbar-container{
       font-size: 15px;
     }
-<<<<<<< HEAD
     .get-tickets, nav {
       display: none;
     }
-=======
->>>>>>> 77019ddc67adaaecc5920599f95580fa8832f761
   }
   @media (max-width: 389px){
     .navbar-container{
       font-size: 14px;
     }
-<<<<<<< HEAD
     .get-tickets, nav {
       display: none;
     }
@@ -256,6 +233,3 @@ nav ul li a:hover::after {
   }
 }
 
-=======
-  }
->>>>>>> 77019ddc67adaaecc5920599f95580fa8832f761
