@@ -1,9 +1,11 @@
-
 .container {
   padding: 80px 500px;
   background: #000;
   overflow: hidden;
   position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 .carouselTrack {
@@ -15,7 +17,7 @@
 .item {
   flex: 0 0 100%;
   height: 500px;
-  min-width: 100%;
+  width: 600px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -84,8 +86,27 @@
   }
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .container {
+    padding: 60px 60px;
+  }
+}
 
+/* Mobile large */
+@media (max-width: 767px) {
+  .container {
+    padding: 30px 5vw;
+  }
+}
 
+/* Mobile small */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px 0;
+    width: 100vw;
+  }
+}
 
 /* Play Button Container */
 .playButtonContainer {
@@ -155,9 +176,6 @@
     height: 60px;
   }
 }
-
-
-
 
 /*videopopup*/
 /* Video Popup Styles */
@@ -231,5 +249,33 @@
     width: 30px;
     height: 30px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 1728px) and (min-width: 1024px){
+  .item {
+    width: 600px;
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .item {
+    width: 400px;
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .item {
+    width: 90vw;
+    min-width: 90vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 98vw;
+    min-width: 98vw;
   }
 }

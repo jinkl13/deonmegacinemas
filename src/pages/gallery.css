@@ -131,3 +131,16 @@
 .gallery-item:hover .gallery-playbutton{
     opacity:1;
 }
+
+
+@media (max-width: 900px) and (min-width:600px) {
+    .gallery-item {
+        flex: 0 1 calc(50% - 24px); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width:599px) {
+    .gallery-item {
+        flex: 0 1 calc(100% - 24px); /* 1 column on very small screens */
+    }
+}

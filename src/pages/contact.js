@@ -31,7 +31,7 @@ const Contact = () => {
       <div className="cb-container">  
         <div className="cb-container-part1">
           <h2>
-            say hi. <br />don't be shy
+            say hi. <br />talk to us.
           </h2>
           <p>we are deon mega cinemas, we are here to help you hire new talents and other human resources for your next project. hoping to speak-share your idea to us without a wait.</p>
           <div className="cbc-p1-image-container">
@@ -64,7 +64,7 @@ const Contact = () => {
       <div className="cp-2-container">
         <h2>contact info</h2>
         <table className="cp-table">
-          <tr>
+          <tr className="cp-table-header">
             <th>department</th>
             <th>email</th>
             <th>phone</th>

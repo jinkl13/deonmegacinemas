@@ -99,7 +99,7 @@ const About = () => {
             src={require('../assets/about/product3.jpg')}     
             alt="team" />
             <h2>Content Production</h2>
-            <p>Always get ypur team ready, because we are here to support the plot.</p>
+            <p>Always get your team ready, because we are here to support the plot.</p>
           </div>
         </div>
       </section>

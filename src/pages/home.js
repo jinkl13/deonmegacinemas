@@ -86,7 +86,7 @@ function App() {
               mass <span className="ls2-part-one-special">destruction</span>
             </h3>
           </div>
-          <div className="ls2-part-two">
+          <div className="ls2-part-two ai-e">
             <p>
               Deon mega cinemas focuses on profitable films at low budgets according to 
               industry trends in multiple languages. Our aim is to build a group of 

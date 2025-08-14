@@ -176,8 +176,9 @@
   /* Responsive Styles */
   @media (max-width: 768px) {
     .ls5-container {
-      flex-direction: column;
+      flex-direction: row;
       gap: 40px;
+      justify-content: space-around;
     }
     
     .ls6-container {
@@ -189,6 +190,8 @@
     .ls6-part-two {
       flex-direction: column;
       gap: 20px;
+      align-items: flex-end;
+      text-align: end;
     }
     
     .ls5-logo {
@@ -196,3 +199,4 @@
     }
 
   }
+

@@ -1,16 +1,15 @@
+
 .bg-black{
     color: var(--color-white);
     background-color: var(--color-black);
 }
 .about-page{
-    width: 100%;
+    width: 100vw;
     height: auto;
     
 }
 
 .ap2{
-    
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +61,8 @@
 .ap3-container{
     display: flex;
     justify-content: space-around;
+    width: 100vw;
+    flex-wrap: wrap;
 }
 .ap3-img{
     filter: invert(100%);
@@ -85,6 +86,8 @@
     flex-direction: column;
     flex:1;
     align-items: flex-start;
+    height: 100px;
+    width:100%
 }
 .ap4 h3{
     font-size: 2rem;
@@ -176,3 +179,148 @@
     background-image:url('../assets/about/work4.jpg');
 }
 
+.breadcrumb-about-page img{
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 1432px) and (min-width: 1024px) {
+    .ap5-img{
+        width: 300px;
+        height: auto;
+    }  
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px){
+    .ap5-img{
+        width: 240px;
+        height: auto;
+    } 
+    .ap5-container{
+        gap:16px;
+    }
+    .ap2-main p{
+    font-size: 3rem;
+}
+.ap2-text, .ap2-main h4, .ap5 h3, .ap6 h3{
+    font-size: 1rem;                
+}
+
+.ap3-img{
+    width: 200px;
+    height: auto;
+}
+
+.ap4-text p, .ap5 h2{
+    font-size: 1rem
+   
+}
+.ap6-text p{
+    font-size: 0.8rem;
+}
+}
+
+
+
+
+
+
+@media (max-width: 767px) and (min-width: 600px){
+
+    .ap5-img{
+        width: 160px;
+        height: auto;
+    } 
+    .ap5-container{
+        gap:20px;
+    }
+
+
+    .ap2-main p{
+    font-size: 2rem;
+}
+.ap2-text, .ap2-main h4, .ap5 h3, .ap6 h3{
+    font-size: 0.8rem;                
+}
+
+.ap2-container {
+   flex-direction: column;
+   align-items: start;
+}
+.ap3-img{
+    width: 160px;
+    height: auto;
+}
+.ap5 h2, .ap6 h3{
+    font-size: 1rem;
+}
+.ap4-text p, .ap5 p, .ap6-text p{
+    font-size: 0.8rem;
+}
+
+}
+
+
+
+
+
+@media (max-width: 599px) and (min-width: 390px){
+    .ap5-container, .ap4-container, .ap6-container{
+        flex-direction: column;
+    }
+    .ap2-main p, .ap5 h2, .ap6 h3{
+    font-size: 1rem;
+}
+.ap2-container {
+   flex-direction: column;
+   align-items: start;
+}
+.ap2-text, .ap2-main h4, .ap5 h3, .ap6 h3{
+    font-size: 0.8rem;                
+}
+.ap3-img{
+    width: 120px;
+    height: auto;
+}
+.ap4-text p, .ap5 p, .ap6-text p {
+    font-size: 0.8rem;
+}
+}
+
+
+
+
+
+@media (max-width: 389px) {
+    .ap5-img{
+        width: 240px;
+        height: auto;
+    }
+
+    .ap5-container, .ap4-container, .ap6-container{
+        flex-direction: column;
+    }
+    .ap2-main p{
+    font-size: 1rem;
+}
+.ap5 h2, .ap6 h3{
+    font-size: 0.8rem;
+}
+.ap2-container {
+   flex-direction: column;
+   align-items: start;
+}
+.ap2-text{
+    font-size: 0.6rem;                
+}
+.ap4-text p, .ap2-main h4, .ap5 h3, .ap6 h3,.ap6-text p{
+    font-size: 0.6rem;
+}
+.ap3-img{
+    width: 100px;
+    height: auto;
+}
+}

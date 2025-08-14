@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,6 +27,7 @@ const Navbar = () => {
         <img src={logo} className="navbar-logo" alt="Deon Cinema Logo" />
 
         {/* Desktop Navigation */}
+        
         <nav className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
           <ul>
              <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
@@ -36,19 +36,22 @@ const Navbar = () => {
             <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
           </ul>
         </nav>
-
         {/* Mobile Menu Button */}
         <div className="navbar-actions">
           <button className="get-tickets">
             Get Tickets <FontAwesomeIcon icon={faArrowRight} className="ticket-icon" />
           </button>
           <div className="divider"></div>
-          <div className="hamburger">
-            <span className="ham1"></span>
-            <span className="ham2"></span>
-            </div>
+          <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <div className="ham1"></div>
+            <div className="ham2"></div>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Navigation Overlay */}
+      <div className={`navbar-overlay ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}></div>
+      
     </header>
   );
 };
